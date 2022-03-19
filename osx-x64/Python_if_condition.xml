@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<Example xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SelectedIndex>1</SelectedIndex>
+  <IsChecked>
+    <boolean>true</boolean>
+    <boolean>true</boolean>
+    <boolean>true</boolean>
+    <boolean>true</boolean>
+    <boolean>true</boolean>
+    <boolean>true</boolean>
+    <boolean>true</boolean>
+    <boolean>true</boolean>
+    <boolean>true</boolean>
+    <boolean>true</boolean>
+    <boolean>true</boolean>
+    <boolean>true</boolean>
+    <boolean>true</boolean>
+    <boolean>true</boolean>
+    <boolean>true</boolean>
+    <boolean>true</boolean>
+    <boolean>true</boolean>
+    <boolean>true</boolean>
+    <boolean>true</boolean>
+    <boolean>true</boolean>
+    <boolean>true</boolean>
+    <boolean>true</boolean>
+    <boolean>true</boolean>
+    <boolean>true</boolean>
+    <boolean>true</boolean>
+    <boolean>true</boolean>
+    <boolean>true</boolean>
+    <boolean>true</boolean>
+    <boolean>true</boolean>
+    <boolean>true</boolean>
+    <boolean>true</boolean>
+    <boolean>true</boolean>
+    <boolean>true</boolean>
+    <boolean>true</boolean>
+    <boolean>true</boolean>
+    <boolean>true</boolean>
+    <boolean>true</boolean>
+    <boolean>true</boolean>
+    <boolean>true</boolean>
+  </IsChecked>
+  <InputText>if 'a'*2 == 'aa':
+    print(True)</InputText>
+  <Rules>
+    <LL1GrammarRule>
+      <Rule>S -&gt; condition A B A colon E</Rule>
+    </LL1GrammarRule>
+    <LL1GrammarRule>
+      <Rule>A -&gt; stringValue D/number C</Rule>
+    </LL1GrammarRule>
+    <LL1GrammarRule>
+      <Rule>B -&gt; equals/notEquals</Rule>
+    </LL1GrammarRule>
+    <LL1GrammarRule>
+      <Rule>C -&gt; plus stringValue/ multiply stringValue/ε</Rule>
+    </LL1GrammarRule>
+    <LL1GrammarRule>
+      <Rule>D -&gt; plus number/ multiply number/ε</Rule>
+    </LL1GrammarRule>
+    <LL1GrammarRule>
+      <Rule>E -&gt; print roundBracketOpen F roundBracketClose</Rule>
+    </LL1GrammarRule>
+    <LL1GrammarRule>
+      <Rule>F -&gt; boolValue/stringValue</Rule>
+    </LL1GrammarRule>
+  </Rules>
+</Example>

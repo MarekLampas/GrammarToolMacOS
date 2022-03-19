@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<Example xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SelectedIndex>2</SelectedIndex>
+  <IsChecked>
+    <boolean>true</boolean>
+    <boolean>true</boolean>
+    <boolean>true</boolean>
+    <boolean>true</boolean>
+    <boolean>true</boolean>
+    <boolean>true</boolean>
+    <boolean>true</boolean>
+    <boolean>true</boolean>
+    <boolean>true</boolean>
+    <boolean>true</boolean>
+    <boolean>true</boolean>
+    <boolean>true</boolean>
+    <boolean>true</boolean>
+    <boolean>true</boolean>
+    <boolean>true</boolean>
+    <boolean>true</boolean>
+    <boolean>true</boolean>
+    <boolean>true</boolean>
+    <boolean>true</boolean>
+    <boolean>true</boolean>
+    <boolean>true</boolean>
+    <boolean>true</boolean>
+    <boolean>true</boolean>
+    <boolean>true</boolean>
+    <boolean>true</boolean>
+    <boolean>true</boolean>
+    <boolean>true</boolean>
+    <boolean>true</boolean>
+    <boolean>true</boolean>
+    <boolean>true</boolean>
+    <boolean>true</boolean>
+    <boolean>true</boolean>
+    <boolean>true</boolean>
+    <boolean>true</boolean>
+    <boolean>true</boolean>
+    <boolean>true</boolean>
+    <boolean>true</boolean>
+    <boolean>true</boolean>
+    <boolean>true</boolean>
+    <boolean>true</boolean>
+    <boolean>true</boolean>
+    <boolean>true</boolean>
+  </IsChecked>
+  <InputText>var list = [
+    { date: '12/1/2011', reading: 3, id: 20055 },
+    { date: '13/1/2011', reading: 5, id: 20053 }
+];
+console.log(list[1].date);</InputText>
+  <Rules>
+    <LL1GrammarRule>
+      <Rule>S -&gt; variable identifier assign B</Rule>
+    </LL1GrammarRule>
+    <LL1GrammarRule>
+      <Rule>B -&gt; squareBracketOpen C squareBracketClose semicolon H</Rule>
+    </LL1GrammarRule>
+    <LL1GrammarRule>
+      <Rule>C -&gt; curlyBracketOpen D curlyBracketClose G</Rule>
+    </LL1GrammarRule>
+    <LL1GrammarRule>
+      <Rule>D -&gt; identifier colon E F</Rule>
+    </LL1GrammarRule>
+    <LL1GrammarRule>
+      <Rule>E -&gt; stringValue/number</Rule>
+    </LL1GrammarRule>
+    <LL1GrammarRule>
+      <Rule>F -&gt; comma D/ε</Rule>
+    </LL1GrammarRule>
+    <LL1GrammarRule>
+      <Rule>G -&gt; comma C/ε</Rule>
+    </LL1GrammarRule>
+    <LL1GrammarRule>
+      <Rule>H -&gt; print roundBracketOpen J roundBracketClose semicolon</Rule>
+    </LL1GrammarRule>
+    <LL1GrammarRule>
+      <Rule>J -&gt; identifier squareBracketOpen number squareBracketClose K</Rule>
+    </LL1GrammarRule>
+    <LL1GrammarRule>
+      <Rule>K -&gt; dot identifier/ε</Rule>
+    </LL1GrammarRule>
+  </Rules>
+</Example>

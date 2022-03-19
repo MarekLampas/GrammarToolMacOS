@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<Example xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SelectedIndex>1</SelectedIndex>
+  <IsChecked>
+    <boolean>false</boolean>
+    <boolean>false</boolean>
+    <boolean>false</boolean>
+    <boolean>false</boolean>
+    <boolean>false</boolean>
+    <boolean>false</boolean>
+    <boolean>false</boolean>
+    <boolean>true</boolean>
+    <boolean>true</boolean>
+    <boolean>false</boolean>
+    <boolean>true</boolean>
+    <boolean>true</boolean>
+    <boolean>true</boolean>
+    <boolean>false</boolean>
+    <boolean>false</boolean>
+    <boolean>true</boolean>
+    <boolean>true</boolean>
+    <boolean>false</boolean>
+    <boolean>false</boolean>
+    <boolean>false</boolean>
+    <boolean>false</boolean>
+    <boolean>false</boolean>
+    <boolean>false</boolean>
+    <boolean>false</boolean>
+    <boolean>false</boolean>
+    <boolean>false</boolean>
+    <boolean>true</boolean>
+    <boolean>false</boolean>
+    <boolean>false</boolean>
+    <boolean>false</boolean>
+    <boolean>false</boolean>
+    <boolean>true</boolean>
+    <boolean>false</boolean>
+    <boolean>false</boolean>
+    <boolean>false</boolean>
+    <boolean>false</boolean>
+    <boolean>true</boolean>
+    <boolean>true</boolean>
+    <boolean>true</boolean>
+  </IsChecked>
+  <InputText>fruits = ["apple", "banana", "cherry"]
+for fruit in fruits:
+    print(fruit)</InputText>
+  <Rules>
+    <LL1GrammarRule>
+      <Rule>S -&gt; identifier assign A</Rule>
+    </LL1GrammarRule>
+    <LL1GrammarRule>
+      <Rule>A -&gt; squareBracketOpen B squareBracketClose D</Rule>
+    </LL1GrammarRule>
+    <LL1GrammarRule>
+      <Rule>B -&gt; stringValue C/ε</Rule>
+    </LL1GrammarRule>
+    <LL1GrammarRule>
+      <Rule>C -&gt; comma stringValue C/ε</Rule>
+    </LL1GrammarRule>
+    <LL1GrammarRule>
+      <Rule>D -&gt; forLoop identifier inside identifier colon E</Rule>
+    </LL1GrammarRule>
+    <LL1GrammarRule>
+      <Rule>E -&gt; print roundBracketOpen F roundBracketClose</Rule>
+    </LL1GrammarRule>
+    <LL1GrammarRule>
+      <Rule>F -&gt; identifier/ stringValue</Rule>
+    </LL1GrammarRule>
+  </Rules>
+</Example>
