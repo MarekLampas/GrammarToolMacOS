@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<Example xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SelectedIndex>0</SelectedIndex>
+  <IsChecked>
+    <boolean>false</boolean>
+    <boolean>false</boolean>
+    <boolean>false</boolean>
+    <boolean>false</boolean>
+    <boolean>false</boolean>
+    <boolean>true</boolean>
+    <boolean>true</boolean>
+    <boolean>true</boolean>
+    <boolean>false</boolean>
+    <boolean>false</boolean>
+    <boolean>true</boolean>
+    <boolean>false</boolean>
+    <boolean>true</boolean>
+    <boolean>true</boolean>
+    <boolean>false</boolean>
+    <boolean>false</boolean>
+    <boolean>false</boolean>
+    <boolean>false</boolean>
+    <boolean>true</boolean>
+    <boolean>false</boolean>
+    <boolean>false</boolean>
+    <boolean>true</boolean>
+    <boolean>false</boolean>
+    <boolean>true</boolean>
+    <boolean>false</boolean>
+    <boolean>true</boolean>
+    <boolean>false</boolean>
+    <boolean>false</boolean>
+    <boolean>false</boolean>
+    <boolean>false</boolean>
+    <boolean>false</boolean>
+    <boolean>false</boolean>
+    <boolean>false</boolean>
+    <boolean>false</boolean>
+    <boolean>false</boolean>
+    <boolean>false</boolean>
+    <boolean>false</boolean>
+    <boolean>false</boolean>
+    <boolean>false</boolean>
+    <boolean>false</boolean>
+    <boolean>false</boolean>
+    <boolean>false</boolean>
+    <boolean>false</boolean>
+    <boolean>false</boolean>
+    <boolean>false</boolean>
+    <boolean>true</boolean>
+    <boolean>true</boolean>
+  </IsChecked>
+  <InputText>1.2+5.9*78</InputText>
+  <Rules>
+    <LL1GrammarRule>
+      <Rule>S -&gt; A E</Rule>
+    </LL1GrammarRule>
+    <LL1GrammarRule>
+      <Rule>E -&gt; plus S [plus]/ε</Rule>
+    </LL1GrammarRule>
+    <LL1GrammarRule>
+      <Rule>A -&gt; B C</Rule>
+    </LL1GrammarRule>
+    <LL1GrammarRule>
+      <Rule>C -&gt; multiply A [multiply]/ε</Rule>
+    </LL1GrammarRule>
+    <LL1GrammarRule>
+      <Rule>B -&gt; number [number]</Rule>
+    </LL1GrammarRule>
+  </Rules>
+</Example>
